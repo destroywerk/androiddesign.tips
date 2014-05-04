@@ -87,6 +87,61 @@ th {
   margin-bottom: 52px;
 }
 
+
+/* Units Calculator Block */
+
+.unit-inputs {
+  margin-left:-20px;
+  overflow: hidden;
+}
+
+.unit-input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float:left;
+  width: 20%;
+  padding-left: 20px;
+}
+
+.unit-input__input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #09c;
+}
+
+.unit-input__input:focus {
+    box-shadow: 0 2px 0 #fff, 0 6px 0 #09c;
+}
+
+.unit-input__input--base {
+  color: #f30;
+  box-shadow: 0 2px 0 #fff, 0 6px 0 #f30;
+}
+
+
+.unit-input__input--base:focus {
+  color: #f30;
+  box-shadow: 0 2px 0 #fff, 0 6px 0 #f30;
+}
+
+.unit-input__label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.unit-input__multiplier {
+  font-weight: 300;
+}
+
 /* Sizing Icon */
 
 .sizing-icons {
