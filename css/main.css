@@ -97,6 +97,7 @@ th {
 
 .unit-inputs {
   margin-left:-20px;
+  margin-top: -42px;
   overflow: hidden;
 }
 
@@ -107,6 +108,7 @@ th {
   float:left;
   width: 20%;
   padding-left: 20px;
+  margin-top: 42px;
 }
 
 .unit-input__input {
@@ -117,7 +119,7 @@ th {
   border: none;
   border-bottom: 2px solid #333;
   outline: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
   color: #09c;
@@ -192,7 +194,7 @@ th {
   font-size:16px;
   color: #fff;
   background-color: #09c;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
 }
 
