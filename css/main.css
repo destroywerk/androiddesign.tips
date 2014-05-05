@@ -75,12 +75,17 @@ th {
 .page-title {
   margin: 21px 0;
   padding: 0 21px 0 110px;
-  background-color: #09c;
+  background: #09c center left no-repeat;
+  /*background-image: url('/img/tips.svg');*/
   color: #fff;
   font-size:53px;
   line-height: 1.88679; /* 99p = 22*4.5 */
   font-weight: 100;
   letter-spacing: -0.5px;
+}
+
+.no-svg .page-title {
+  /*background-image: url('/img/tips.png');*/
 }
 
 .section {
@@ -158,6 +163,10 @@ th {
   padding-left: 16px;
 }
 
+.sizing-icon--bar {
+  width: 33%;
+}
+
 .sizing-icon__header {
   margin-bottom: 0;
 }
@@ -169,9 +178,14 @@ th {
 
 .sizing-icon__demo {
   height: 96px;
-
 }
-.sizing-icon__demo__box {
+
+.sizing-icon__demo--bar {
+  height: 112px;
+}
+
+.sizing-icon__demo__box,
+.sizing-icon__demo__bar {
   display: inline-block;
   border: 0 solid #4cb7db;
 
@@ -180,6 +194,10 @@ th {
   background-color: #09c;
   font-weight: 500;
   text-align: center;
+}
+
+.sizing-icon__demo__bar {
+  width: 100%;
 }
 
 .sizing-icon__demo__box--launcher {
@@ -209,6 +227,20 @@ th {
   border-width: 4px;
 }
 
+.sizing-icon__demo__bar--small-portrait {
+  height: 96px;
+  line-height: 96px;
+}
+
+.sizing-icon__demo__bar--small-landscape {
+  height: 80px;
+  line-height: 80px;
+}
+
+.sizing-icon__demo__bar--large {
+  height: 112px;
+  line-height: 112px;
+}
 /* Asset Table */
 .asset-table {
   width: 100%;
