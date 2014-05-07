@@ -13,6 +13,7 @@ html {
 
 body {
   border-top: 10px solid #09c;
+  min-width:320px;
 }
 
 a {
@@ -106,15 +107,34 @@ th {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float:left;
-  width: 20%;
+  width: 50%;
   padding-left: 20px;
   margin-top: 42px;
 }
+
+.unit-input--break {
+  clear:left;
+}
+
+@media (min-width:420px) {
+  .unit-input {
+    width: 33%;
+  }
+}
+
+@media (min-width:600px) {
+  .unit-input {
+    width: 20%;
+  }
+}
+
 
 .unit-input__input {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  min-width: 0;
   width: 100%;
   border: none;
   border-bottom: 2px solid #333;
@@ -161,12 +181,25 @@ th {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float:left;
-  width: 25%;
+  width: 50%;
   padding-left: 16px;
 }
 
+@media (min-width:600px) {
+  .sizing-icon {
+    width: 25%;
+  }
+}
+
+
 .sizing-icon--bar {
-  width: 33%;
+    width: 100%;
+  }
+
+@media (min-width:480px) {
+  .sizing-icon--bar {
+    width: 33%;
+  }
 }
 
 .sizing-icon__header {
@@ -272,6 +305,8 @@ th {
 
 /* Viewports */
 .viewports {
+  overflow:hidden;
+  overflow:hidden;
   overflow:hidden;
 }
 .viewports__img {
