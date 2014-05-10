@@ -68,9 +68,37 @@ th {
 }
 
 .page-container {
-  width: 580px;
+  width: 810px;
   padding: 0 24px;
   margin:0 auto;
+}
+
+.layout {
+  overflow: auto;
+}
+
+
+.layout__content,
+.layout__sidebar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+.layout__content {
+  width: 100%;
+  padding-right: 230px;
+  margin-right:-170px;
+}
+
+.layout__sidebar {
+  width: 170px;
+}
+
+.sidebar__links {
+  list-style: none;
+  padding-left: 0;
 }
 
 .page-title {
