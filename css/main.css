@@ -77,7 +77,6 @@ th {
   overflow: auto;
 }
 
-
 .layout__content,
 .layout__sidebar {
   -moz-box-sizing: border-box;
@@ -97,8 +96,7 @@ th {
 }
 
 .sidebar__links {
-  list-style: none;
-  padding-left: 0;
+  padding-left: 28px;
 }
 
 .page-title {
@@ -357,3 +355,37 @@ th {
   padding: 2px 4px;
   text-align: left;
 }
+
+/* Share icons */
+.share {
+  list-style: none;
+  padding-left: 0;
+}
+
+.share__link {
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.share__link span {
+  text-decoration: underline;
+}
+
+.share__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+  background-image: url('/img/sprite.png');
+  background-repeat: no-repeat;
+}
+
+.share__link--facebook .share__icon { background-position: 0 0; }
+.share__link--facebook:hover .share__icon { background-position: -36px 0; }
+
+.share__link--google .share__icon { background-position: -72px 0; }
+.share__link--google:hover .share__icon { background-position: -108px 0; }
+
+.share__link--twitter .share__icon { background-position: -144px 0; }
+.share__link--twitter:hover .share__icon { background-position: -184px 0; }
