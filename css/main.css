@@ -68,8 +68,8 @@ th {
 }
 
 .page-container {
-  width: 810px;
-  padding: 0 24px;
+  max-width: 810px;
+  padding: 0 16px;
   margin:0 auto;
 }
 
@@ -87,12 +87,17 @@ th {
 
 .layout__content {
   width: 100%;
-  padding-right: 230px;
-  margin-right:-170px;
 }
 
-.layout__sidebar {
-  width: 170px;
+@media (min-width: 680px) {
+  .layout__content {
+    padding-right: 230px;
+    margin-right:-170px;
+  }
+
+  .layout__sidebar {
+    width: 170px;
+  }
 }
 
 .sidebar__links {
@@ -102,6 +107,7 @@ th {
 .page-title {
   margin: 21px 0;
   padding: 0 21px 0 95px;
+  overflow: hidden;
   background: #09c 40px center no-repeat;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><path fill="#fff" d="M20.061 3.208l19.747 12.575-19.747 12.576-19.747-12.575 19.747-12.576zm0 28.027l12.608-8.303 2.83 3.991-15.438 10.779-15.079-10.779 2.534-4.03 12.545 8.342z"/></svg>');
   color: #fff;
@@ -113,6 +119,37 @@ th {
 
 .no-svg .page-title {
   background-image: url('/img/tips.png');
+}
+
+
+.top-nav__links {
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+
+.top-nav__links > li {
+  float:left;
+  width: 50%;
+  display: block;
+}
+
+@media (min-width: 460px) {
+  .top-nav__links > li {
+    width: 33%;
+  }
+}
+
+@media (min-width: 590px) {
+  .top-nav__links > li {
+    width: 25%;
+  }
+}
+
+@media (min-width: 680px) {
+  .top-nav {
+    display: none;
+  }
 }
 
 .section {
@@ -149,6 +186,19 @@ th {
 }
 
 @media (min-width:600px) {
+  .unit-input {
+    width: 20%;
+  }
+}
+
+/* Two cols kick in so the width of first column becomes smaller */
+@media (min-width:680px) {
+  .unit-input {
+    width: 33%;
+  }
+}
+
+@media (min-width:850px) {
   .unit-input {
     width: 20%;
   }
@@ -217,6 +267,18 @@ th {
   }
 }
 
+/* Two cols kick in so the width of first column becomes smaller */
+@media (min-width:680px) {
+  .sizing-icon {
+    width: 50%;
+  }
+}
+
+@media (min-width:760px) {
+  .sizing-icon {
+    width: 25%;
+  }
+}
 
 .sizing-icon--bar {
     width: 100%;
@@ -331,9 +393,7 @@ th {
 
 /* Viewports */
 .viewports {
-  overflow:hidden;
-  overflow:hidden;
-  overflow:hidden;
+  overflow: hidden;
 }
 .viewports__img {
   float:left;
@@ -354,6 +414,8 @@ th {
 .asset-table td {
   padding: 2px 4px;
   text-align: left;
+  word-wrap:break-word;
+  word-break: break-all;
 }
 
 /* Share icons */
