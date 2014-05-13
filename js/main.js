@@ -27,7 +27,7 @@
       $(this).removeClass(inputBaseClass);
 
       // Null out values if the inputed value is 0
-      this.value = (baseValue !== 0 ? valueString : '');
+      this.value = (typeof baseValue == 'number' && baseValue !== 0 ? valueString : '');
     });
 
   });
