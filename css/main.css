@@ -186,7 +186,8 @@ th {
 
 .unit-inputs {
   margin-left:-20px;
-  margin-top: -32px;
+  margin-top: -22px;
+  margin-bottom: 2em;
   overflow: hidden;
 }
 
@@ -197,7 +198,7 @@ th {
   float:left;
   width: 50%;
   padding-left: 20px;
-  margin-top: 42px;
+  margin-top: 32px;
 }
 
 .unit-input--break {
@@ -392,13 +393,16 @@ th {
 
 /* 9 patch image */
 .nine-patch {
-  overflow:hidden;
+  overflow: hidden;
 }
 .nine-patch__img {
   position: relative;
   float:left;
   width: 150px;
-  margin-top: 9px;
+}
+
+.nine-patch__img  img {
+  padding-top: 21px;
 }
 
 .nine-patch__text {
@@ -407,12 +411,12 @@ th {
 
 .nine-patch__img__fill {
   position: absolute;
-  top: 12px;
+  top: 70px;
   left: 72px;
 }
 .nine-patch__img__stretch {
-  position:absolute;
-  top: 69px;
+  position: absolute;
+  top: 0;
   left: 0;
 }
 
@@ -427,7 +431,11 @@ th {
 }
 
 .viewports__text {
-  margin-left: 75px;
+  margin-left: 107px;
+}
+
+.viewports__text ul {
+  padding-left: 0;
 }
 
 /* Asset Table */

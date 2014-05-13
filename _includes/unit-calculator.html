@@ -1,7 +1,14 @@
 <div class="section" id="unit-calculator">
   <h2 class="section__header">Unit calculator</h2>
-  <p>Enter the base unit required and the other fields will auto-fill</p>
-  <noscript><strong>Please enable JavaScript to use the unit calculator</strong></noscript>
+  <p>One of the fragmentation issues of Android is that your app may be
+    installed on devices with a variety of pixel densities and as such you need
+    to create each icon at a variety of sizes. These follow a very specific
+    scaling ratio of 1 : 1.5 : 2 : 3 : 4 (with MDPI as the baseline 1x).
+    Enter the pixel dimensions of the size you’re designing at and the other
+    densities will auto-fill.</p>
+
+
+  <noscript><p><strong>Please enable JavaScript to use the unit calculator</strong></p></noscript>
   <form class="unit-inputs">
 
     <div class="unit-input">
@@ -54,4 +61,11 @@
     </div>
 
   </form>
+
+  <p>We recommend creating your assets at one of the top densities (xxhdpi or
+    xxxhdpi) and then scaling them down accordingly. To help you figure out what
+    pixel sizes the other assets should be use the tool below. <a href="
+    http://developer.android.com/design/style/devices-displays.html">Device display
+    guidelines</a>.
+  </p>
 </div>
