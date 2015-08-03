@@ -1,9 +1,7 @@
 androiddesign.tips
 ==================
 
-**Work in Progress** for what shall eventually become http://androiddesign.tips
-
-Keep this under your hat for now yeah?
+Source code for the http://androiddesign.tips website.
 
 Development
 -----------
